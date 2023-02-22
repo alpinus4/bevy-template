@@ -1,5 +1,7 @@
 <div align="center">
-    # bevy-template
+
+# bevy-template
+
 </div>
 
 This is a minimal bevy template for [cargo generate](https://github.com/cargo-generate/cargo-generate).
