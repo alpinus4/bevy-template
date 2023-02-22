@@ -1,0 +1,6 @@
+[template]
+ignore = [
+  "Cargo.lock",
+  "target",
+  "README.md"
+]
