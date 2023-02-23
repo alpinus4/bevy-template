@@ -2,5 +2,6 @@
 ignore = [
   "Cargo.lock",
   "target",
-  "README.md"
+  "README.md",
+  ".github"
 ]

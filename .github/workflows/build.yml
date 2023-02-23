@@ -16,6 +16,7 @@ jobs:
     - uses: actions-rs/toolchain@v1
       with:
         toolchain: nightly
+    - run: cargo install cargo-generate
     - run: cargo generate --init https://github.com/alpinus4/bevy-template --name test_project
     - uses: actions-rs/cargo@v1
       with:
