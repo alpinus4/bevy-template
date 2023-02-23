@@ -1,6 +1,8 @@
 <div align="center">
 
 # bevy-template
+  
+![Build](https://github.com/alpinus4/bevy-template/actions/workflows/build.yml/badge.svg)
 
 </div>
 
