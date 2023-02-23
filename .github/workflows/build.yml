@@ -18,7 +18,7 @@ jobs:
       with:
         toolchain: nightly
     - run: sudo apt-get install -y clang mold
-    - uses: cargo-generate/cargo-generate-action@v0.17
+    - uses: cargo-generate/cargo-generate-action@v0.17.5
       with:
         name: test-project
     - run: |
