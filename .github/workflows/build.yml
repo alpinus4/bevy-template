@@ -13,11 +13,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3
     - uses: actions-rs/toolchain@v1
       with:
         toolchain: nightly
-    - run: cargo install cargo-generate
-    - run: cargo generate --init https://github.com/alpinus4/bevy-template --name test_project
-    - uses: actions-rs/cargo@v1
+    - run: sudo apt-get install -y clang mold
+    - uses: cargo-generate/cargo-generate-action@v0.17
       with:
-        command: build 
+        name: test-project
+    - run: |
+        mv test-project ${{ runner.temp }}/
+        cd ${{ runner.temp }}/test-project
+        cargo check
